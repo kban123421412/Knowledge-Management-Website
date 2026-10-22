@@ -1,0 +1,16 @@
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.topnav-list{
+    display: flex;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+}
+

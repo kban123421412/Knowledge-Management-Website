@@ -1,0 +1,41 @@
+services:
+  php:
+    build: .
+    container_name: team27-php
+    ports:
+      - "8080:80"
+      - "9000:9000"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=appuser
+      - DB_PASSWORD=apppass
+      - DB_NAME=team27
+    networks:
+      - team27-network
+
+  mysql:
+    image: mysql:8.0
+    container_name: team27-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: team27
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data2:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./database/seed.sql:/docker-entrypoint-initdb.d/02-seed.sql:ro
+    networks:
+      - team27-network
+
+volumes:
+  mysql_data2:
+
+networks:
+  team27-network:

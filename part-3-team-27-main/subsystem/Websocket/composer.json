@@ -1,0 +1,6 @@
+{
+    "name": "team27/websocket",
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}

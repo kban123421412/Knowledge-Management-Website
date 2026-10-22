@@ -1,0 +1,272 @@
+.mia-navbar-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 12px 0;
+    background: linear-gradient(180deg, rgba(17, 24, 39, 0.04), rgba(17, 24, 39, 0));
+}
+
+.mia-navbar {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 26px;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+    padding: 1.15rem 1.6rem;
+}
+
+.mia-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    column-gap: 1rem;
+}
+
+.mia-left {
+    justify-self: start;
+}
+
+.mia-center {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+}
+
+.mia-right {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.mia-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #0f172a;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.mia-brand:hover {
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.mia-nav-link {
+    position: relative;
+    color: #374151;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.98rem;
+    padding: 0.35rem 0;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.mia-nav-link:hover {
+    color: #111827;
+    text-decoration: none;
+}
+
+.mia-nav-link.active {
+    color: #111827;
+}
+
+.mia-nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+    border-radius: 999px;
+    background: #374151;
+}
+
+.mia-settings-link {
+    color: #111827;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.mia-settings-link:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+    text-decoration: none !important;
+}
+
+.mia-profile-dropdown .dropdown-toggle {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    gap: 0.7rem;
+    color: #111827;
+}
+
+.mia-profile-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+.mia-profile-dropdown .dropdown-toggle:focus,
+.mia-profile-dropdown .dropdown-toggle:active {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.mia-profile-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+    flex-shrink: 0;
+}
+
+.mia-profile-name {
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: #111827;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.mia-chevron {
+    color: #6b7280;
+    font-size: 0.85rem;
+    transition: transform 0.2s ease;
+}
+
+.mia-profile-dropdown.show .mia-chevron,
+.mia-profile-dropdown .dropdown-toggle[aria-expanded="true"] .mia-chevron {
+    transform: rotate(180deg);
+}
+
+.mia-dropdown-menu {
+    margin-top: 0.9rem !important;
+    border: 1px solid #eceff3;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+    padding: 0.55rem;
+    min-width: 280px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: none;
+}
+
+@keyframes miaDropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.mia-dropdown-header {
+    padding: 0.95rem 1rem 0.85rem;
+    border-bottom: 1px solid #f1f5f9;
+    margin-bottom: 0.4rem;
+}
+
+.mia-dropdown-header strong {
+    display: block;
+    color: #111827;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+}
+
+.mia-dropdown-header span {
+    color: #6b7280;
+    font-size: 0.88rem;
+}
+
+.mia-dropdown-item {
+    border-radius: 12px;
+    padding: 0.82rem 0.95rem;
+    font-size: 0.96rem;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: background-color 0.18s ease, transform 0.18s ease;
+}
+
+.mia-dropdown-item i {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.mia-dropdown-item:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+.mia-dropdown-item:hover i {
+    color: #111827;
+}
+
+@media (max-width: 767.98px) {
+    .mia-grid {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .mia-left,
+    .mia-center,
+    .mia-right {
+        justify-self: center;
+    }
+
+    .mia-center {
+        gap: 1.5rem;
+    }
+
+    .mia-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mia-brand {
+        font-size: 1.7rem;
+    }
+
+    .mia-navbar {
+        padding: 1rem 1.2rem;
+        border-radius: 22px;
+    }
+
+    .mia-profile-name {
+        max-width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .mia-dropdown-menu {
+        min-width: 240px;
+    }
+}

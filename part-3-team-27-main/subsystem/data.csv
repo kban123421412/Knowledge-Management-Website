@@ -1,0 +1,26 @@
+contact_id,contact_name,contact_avatar_letter,contact_avatar_colour,contact_avatar_class,message_id,message_direction,message_text,message_timestamp
+1,Florence,F,#29b765,green,1,incoming,Hi just checking in about the project progress.,2026-03-11T13:50:00
+1,Florence,F,#29b765,green,2,outgoing,Everything is going well so far I'll send an update later.,2026-03-11T13:52:00
+1,Florence,F,#29b765,green,3,incoming,Perfect thanks. Make sure the UI is ready for review.,2026-03-11T13:54:00
+1,Florence,F,#29b765,green,4,outgoing,Will do. I'm focusing on the layout first then styling.,2026-03-11T14:00:00
+1,Florence,F,#29b765,green,5,incoming,Sounds good.,2026-03-11T14:10:00
+1,Florence,F,#29b765,green,6,outgoing,I'll share the next version soon.,2026-03-11T14:15:00
+2,Group Chat 1,G,#7c5cff,purple,7,incoming,Morning everyone! Quick standup at 9?,2026-03-11T08:30:00
+2,Group Chat 1,G,#7c5cff,purple,8,outgoing,Works for me.,2026-03-11T08:32:00
+2,Group Chat 1,G,#7c5cff,purple,9,incoming,Same - I'll set up the call.,2026-03-11T08:33:00
+2,Group Chat 1,G,#7c5cff,purple,10,outgoing,Sending the link now.,2026-03-11T08:35:00
+3,Alex,A,#e6b93d,yellow,11,incoming,Did you get the report I sent over?,2026-03-11T09:00:00
+3,Alex,A,#e6b93d,yellow,12,outgoing,Just looking at it now - looks great!,2026-03-11T09:05:00
+3,Alex,A,#e6b93d,yellow,13,incoming,Let me know if you have any feedback.,2026-03-11T09:06:00
+4,Marketing,M,#2e86c1,blue,14,incoming,Can we align on the campaign brief?,2026-03-11T10:00:00
+4,Marketing,M,#2e86c1,blue,15,outgoing,Sure - send it over and I'll review.,2026-03-11T10:05:00
+5,Design Team,D,#e05d5d,red,16,incoming,The new mockups are ready for sign off.,2026-03-10T14:00:00
+5,Design Team,D,#e05d5d,red,17,outgoing,Looks great - approved!,2026-03-10T14:10:00
+6,Support,S,#be4bdb,pink,18,incoming,We have a ticket that needs your attention.,2026-03-10T11:00:00
+6,Support,S,#be4bdb,pink,19,outgoing,On it - I'll take a look now.,2026-03-10T11:05:00
+7,James,J,#ff7a1a,orange,20,incoming,Are you free for a quick call later?,2026-03-09T15:00:00
+7,James,J,#ff7a1a,orange,21,outgoing,Yes free from 3pm.,2026-03-09T15:02:00
+8,HR,H,#2f2f2f,dark,22,incoming,Please complete your annual review form.,2026-03-08T09:00:00
+8,HR,H,#2f2f2f,dark,23,outgoing,Done - just submitted it.,2026-03-08T09:30:00
+9,Operations,O,#6b3f52,maroon,24,incoming,The equipment order has been approved.,2026-03-06T10:00:00
+9,Operations,O,#6b3f52,maroon,25,outgoing,Great - thanks for letting me know.,2026-03-06T10:05:00

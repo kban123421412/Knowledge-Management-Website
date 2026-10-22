@@ -1,0 +1,373 @@
+/* modal base */
+
+.mia-modal .modal-content {
+    border: 1px solid #eceff3;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    overflow: hidden;
+}
+
+.mia-modal .modal-header {
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1.4rem 1.6rem 1.1rem;
+    background: #f8fafc;
+}
+
+.mia-modal .modal-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.mia-modal .modal-header .btn-close {
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+.mia-modal .modal-header .btn-close:hover {
+    opacity: 0.8;
+}
+
+.mia-modal .modal-body {
+    padding: 1.6rem;
+}
+
+.mia-modal .modal-footer {
+    border-top: 1px solid #f1f5f9;
+    padding: 1rem 1.6rem;
+    background: #f8fafc;
+}
+
+/* profile */
+
+.mia-profile-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 0 1.6rem;
+}
+
+.mia-profile-avatar-lg {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+}
+
+.mia-profile-hero-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.mia-profile-hero-email {
+    font-size: 0.88rem;
+    color: #6b7280;
+}
+
+.mia-role-badge {
+    display: inline-block;
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.mia-role-badge.pm   { background: rgba(59,130,246,0.1);  color: #2563eb; }
+.mia-role-badge.tl   { background: rgba(245,158,11,0.1);  color: #d97706; }
+.mia-role-badge.emp  { background: rgba(107,114,128,0.1); color: #4b5563; }
+
+/* rows */
+
+.mia-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mia-field-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    background: #f9fafb;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.mia-field-label {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.mia-field-value {
+    color: #111827;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* headings */
+
+.mia-modal-section-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 1.2rem 0 0.6rem;
+}
+
+.mia-modal-section-title:first-child {
+    margin-top: 0;
+}
+
+/* toggle rows - preferences */
+
+.mia-toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    background: #f9fafb;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    gap: 12px;
+}
+
+.mia-toggle-row-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.mia-toggle-label {
+    font-weight: 600;
+    color: #111827;
+}
+
+.mia-toggle-desc {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.mia-toggle-row .form-check-input {
+    width: 2.6em;
+    height: 1.4em;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mia-toggle-row .form-check-input:checked {
+    background-color: #111827;
+    border-color: #111827;
+}
+
+/* segments - preferences */
+
+.mia-segment {
+    display: flex;
+    background: #f3f4f6;
+    border-radius: 10px;
+    padding: 3px;
+    gap: 2px;
+}
+
+.mia-segment-btn {
+    flex: 1;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.mia-segment-btn.active {
+    background: #ffffff;
+    color: #111827;
+    box-shadow: 0 1px 4px rgba(15,23,42,0.08);
+}
+
+.mia-danger-btn {
+    width: 100%;
+    border: 1px solid #fecaca;
+    background: #fff5f5;
+    color: #dc2626;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    text-align: left;
+}
+
+.mia-danger-btn:hover {
+    background: #fee2e2;
+    border-color: #fca5a5;
+}
+
+.mia-save-btn {
+    border: none;
+    background: #111827;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.mia-save-btn:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+.mia-cancel-btn {
+    border: 1px solid #e5e7eb;
+    background: transparent;
+    color: #6b7280;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.mia-cancel-btn:hover {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+/* new chat modal */
+
+.nc-filter-btn {
+    border: 1px solid #e5e7eb;
+    background: transparent;
+    color: #6b7280;
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.nc-filter-btn.active {
+    background: #111827;
+    color: #ffffff;
+    border-color: #111827;
+}
+
+.nc-filter-btn:hover:not(.active) {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.nc-user-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.nc-user-row:hover {
+    background: #f3f4f6;
+}
+
+.nc-user-row.selected {
+    background: #f0f4ff;
+}
+
+.nc-user-name {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #111827;
+    flex: 1;
+}
+
+.nc-user-role {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-right: 8px;
+}
+
+.nc-alpha-header {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 10px 12px 4px;
+}
+
+.nc-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #f3f4f6;
+    border-radius: 999px;
+    padding: 4px 10px 4px 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.nc-chip button {
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.nc-chip button:hover {
+    color: #111827;
+}
+
+.nc-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.nc-user-row.selected .nc-checkbox {
+    background: #111827;
+    border-color: #111827;
+}
+
+.nc-user-row.selected .nc-checkbox::after {
+    content: '✓';
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
